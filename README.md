@@ -7,3 +7,6 @@ It's a theatr website, were users can get the info about the shows in their loca
 1 form;
 Custom fonts
 Responsive styles
+
+Live: https://coppergroup.github.io/thegrand/
+Github Link: https://github.com/CopperGroup/thegrand
