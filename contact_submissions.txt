@@ -1,0 +1,3 @@
+2025-11-28 21:45:55 | Євгеній | tymyevhen@gmail.com | tickets
+2025-11-28 21:50:54 | Євгеній | admin@example.com | venue | HELLO&lt; AAAAAAAAAAAAAAAAAAAAAAAAAA
+2025-11-28 21:52:16 | Євгеній | admin@example.com | group | AAAAAAAAAAAAAAAAAAAAAAAAAA&lt; MESSAGE

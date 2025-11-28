@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets - The Grand Theatre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/forms.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">THE GRAND</a>
+        <nav>
+            <ul>
+                <li><a href="index.html#shows">Shows</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="cta-button">Book Tickets</button>
+        <button class="mobile-menu-toggle">☰</button>
+    </header>
+
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1>Book Your Tickets</h1>
+            <p>Reserve your seats for an unforgettable theatre experience</p>
+        </div>
+    </section>
+
+    <section class="booking-section">
+        <h2>Ticket Booking Inquiry</h2>
+        <form class="booking-form" method="POST" action="booking.php">
+            <div class="form-group">
+                <label for="booking-name">Full Name *</label>
+                <input type="text" id="booking-name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="booking-email">Email Address *</label>
+                <input type="email" id="booking-email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="booking-phone">Phone Number</label>
+                <input type="tel" id="booking-phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="show">Select Show *</label>
+                <select id="show" name="show" required>
+                    <option value="">Choose a show</option>
+                    <option value="Hamlet">Hamlet</option>
+                    <option value="Swan Lake">Swan Lake</option>
+                    <option value="A Streetcar Named Desire">A Streetcar Named Desire</option>
+                    <option value="Les Misérables">Les Misérables</option>
+                    <option value="Death of a Salesman">Death of a Salesman</option>
+                    <option value="Romeo and Juliet">Romeo and Juliet</option>
+                    <option value="The Nutcracker">The Nutcracker</option>
+                    <option value="Macbeth">Macbeth</option>
+                    <option value="Chicago">Chicago</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Preferred Date *</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="section">Seating Section *</label>
+                <select id="section" name="section" required>
+                    <option value="">Select section</option>
+                    <option value="orchestra">Orchestra ($85-$120)</option>
+                    <option value="mezzanine">Mezzanine ($65-$95)</option>
+                    <option value="balcony">Balcony ($45-$75)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="tickets">Number of Tickets *</label>
+                <input type="number" id="tickets" name="tickets" min="1" max="10" value="1" required>
+            </div>
+
+            <button type="submit" class="submit-button">Submit Booking Inquiry</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>The Grand Theatre</h3>
+                <p>Experience the magic of live performance in our historic venue.</p>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#shows">Current Shows</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="visit.html">Plan Your Visit</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Visit Us</h3>
+                <ul>
+                    <li>123 Theatre Street</li>
+                    <li>Arts District</li>
+                    <li>New York, NY 10001</li>
+                    <li><a href="tel:555-123-4567">(555) 123-4567</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Grand Theatre. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="./js/form-validation.js"></script>
+    <script src="./js/dynamic-content.js"></script>
+    <script src="./js/interactive.js"></script>
+</body>
+</html>
+

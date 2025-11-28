@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/forms.css">
 </head>
 <body>
     <header>
@@ -17,10 +18,11 @@
                 <li><a href="index.html#shows">Shows</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="visit.html">Visit</a></li>
+                <li><a href="booking.html">Booking</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <button class="cta-button">Book Tickets</button>
+        <a href="booking.html" class="cta-button">Book Tickets</a>
         <button class="mobile-menu-toggle">☰</button>
     </header>
 
@@ -73,7 +75,7 @@
 
             <div class="contact-form-wrapper">
                 <h2>Send Us a Message</h2>
-                <form class="contact-form">
+                <form class="contact-form" method="POST" action="process_contact.php">
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required>
@@ -205,5 +207,8 @@
         </div>
     </footer>
     
+    <script src="./js/form-validation.js"></script>
+    <script src="./js/dynamic-content.js"></script>
+    <script src="./js/interactive.js"></script>
 </body>
 </html>
